@@ -2,6 +2,7 @@ package com;
 
 import java.sql.*;
 
+
 public class Item {
 
 	private Connection connect() {
@@ -10,7 +11,7 @@ public class Item {
 		
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
-			con = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/items","root", "");
+			con = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/Items","root", "");
 			
 			//for testing
 			//System.out.println("Successfully connected");
